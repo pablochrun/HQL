@@ -1,6 +1,8 @@
 package com.example.hql.HibernateQueryExample.dao;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import org.hibernate.HibernateException;
@@ -69,7 +71,7 @@ public abstract class AbstractDAO {
 
 		try {
 			dummy.iniciaOperacion();
-			listaResultado = dummy.getSession().createQuery("FROM " + claseEntidad.getSimpleName()).list();
+			listaResultado = castList(claseEntidad,dummy.getSession().createQuery("FROM " + claseEntidad.getSimpleName()).getResultList());
 		} catch (HibernateException he) {
 			dummy.manejaExcepcion(he);
 		} finally {
@@ -77,6 +79,13 @@ public abstract class AbstractDAO {
 		}
 
 		return listaResultado;
+	}
+	
+	public static <T> List<T> castList(Class<? extends T> clazz, Collection<?> c) {
+	    List<T> r = new ArrayList<T>(c.size());
+	    for(Object o: c)
+	      r.add(clazz.cast(o));
+	    return r;
 	}
 
 }

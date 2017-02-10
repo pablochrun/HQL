@@ -1,0 +1,12 @@
+com\example\hql\HibernateQueryExample\dao\AbstractDAO$2.class
+com\example\hql\HibernateQueryExample\App.class
+com\example\hql\HibernateQueryExample\utils\HibernateUtil.class
+com\example\hql\HibernateQueryExample\dao\AbstractDAO$1.class
+com\example\hql\HibernateQueryExample\dao\AbstractDAO$3.class
+com\example\hql\HibernateQueryExample\modelo\Producto.class
+com\example\hql\HibernateQueryExample\modelo\Direccion.class
+com\example\hql\HibernateQueryExample\modelo\Producto$Estatus.class
+com\example\hql\HibernateQueryExample\modelo\Usuario.class
+com\example\hql\HibernateQueryExample\dao\AbstractDAO.class
+com\example\hql\HibernateQueryExample\modelo\Compra.class
+com\example\hql\HibernateQueryExample\dao\UsuariosDAO.class
