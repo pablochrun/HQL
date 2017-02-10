@@ -1,8 +1,0 @@
-com\example\hql\HibernateQueryExample\App.class
-com\example\hql\HibernateQueryExample\dao\AbstractDAO.class
-com\example\hql\HibernateQueryExample\utils\HibernateUtil.class
-com\example\hql\HibernateQueryExample\modelo\Producto.class
-com\example\hql\HibernateQueryExample\modelo\Compra.class
-com\example\hql\HibernateQueryExample\modelo\Direccion.class
-com\example\hql\HibernateQueryExample\modelo\Producto$Estatus.class
-com\example\hql\HibernateQueryExample\modelo\Usuario.class
